@@ -17,5 +17,7 @@ public class SonOfThreeLumbers {
         System.out.println("The sum of the numbers is " + (first + second + third));
         System.out.println("The product of the numbers is " + (first * second * third)); // simple multiplication rule
         System.out.println("The average of the numbers is " + (first + second + third) / 3.0); // divided by 3 cuz only 3 inputs were given
+
+        scanner.close();
     }
 }
