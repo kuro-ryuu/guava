@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "A1.3",
+        "A1.2",
         "A1.1",
-        "A1.2"
+        ""
     ]
 }
