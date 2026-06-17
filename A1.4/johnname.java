@@ -1,5 +1,3 @@
-
-
 import java.util.Random;
 
 public class johnname {
@@ -8,12 +6,14 @@ public class johnname {
             "Alphard","Ampiroy","Arnalio","Adachi","Aquioy","Ankuyw",
             "Berdoy","Bezuli","Boure","Bafloy","Bicao","Bendale","Brown",
             "Conroy","Caoman","Cleimain","Charduy","Clark","Cineilou","Cpolui",
-            "Davy","Droi"
+            "Davy","Droi",
+            "Yu"
         };
 
         String[] Lname = {
             "Alerandoy","Alcetroz","Adams","Asemouily","Arthur","Ankevozich",
-            "Borlak","Bernouli","Bourne","Bufula","Benjamin","Brund","Boujei"
+            "Borlak","Bernouli","Bourne","Bufula","Benjamin","Brund","Boujei",
+            "Narukami"
         };
     
         System.out.println(Fname[new Random().nextInt(Fname.length)] + " " + Lname[new Random().nextInt(Lname.length)]);

@@ -17,7 +17,7 @@ public class ommelt {
         double naula = (int) (grampa/naula_g);
         grampa %= naula_g;
         // remain luoti
-        double luoti = (int) (grampa/luoti_g);
+        double luoti = (grampa/luoti_g);
 
 
         System.out.printf("Weight (g): %.0f \n", grampa);

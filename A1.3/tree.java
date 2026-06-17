@@ -23,7 +23,7 @@ public class tree {
             double troot1 = (-b + Math.sqrt(delta)) / (2*a);
             double troot2 = (-b - Math.sqrt(delta)) / (2*a);
 
-            System.out.printf("le radici dell'equazione quadratica sono %.2f e %.2f", troot1, troot2);
+            System.out.printf("le radici del l'equazione quadratica sono %.2f e %.2f", troot1, troot2);
 
         scanner.close();
         }
