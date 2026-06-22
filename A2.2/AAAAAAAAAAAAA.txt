@@ -1,1 +1,3 @@
 All tasks finished
+
+ChatGPT was used in the process of bug-fixing and giving hints (as in the general direction and if the current solution is optimal), the code itself was typed and fixed by hand
