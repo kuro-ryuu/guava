@@ -25,6 +25,8 @@ public class judgement {
         System.out.print("RAPTURE: ");
         int RAPTURE = scanner.nextInt();
 
+        scanner.close();
+
         if (beningging > RAPTURE) {
             System.out.println("that is NOT how it works vro");
             return; // how do i close this thing bruh like damn bro idk maybe leak less??
@@ -36,7 +38,5 @@ public class judgement {
                 System.out.print(" " +i);
             }
         }
-
-        scanner.close();
     }
 }
