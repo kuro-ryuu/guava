@@ -1,3 +1,4 @@
+package Car;
 public class Car {
     /* An object of class Car will have instance variables speed and gasolineLevel.
      * Both are private (they can not be accessed outside the class methods).
@@ -91,13 +92,13 @@ public class Car {
         } else
             speed = 0;
     }
-    double getSpeed() {
+    public double getSpeed() {
         return speed;
     }
     String getTypeName() {
         return typeName;
     }
-    void fillTank() {
+    public void fillTank() {
         gasolineLevel = 100;
     }
     double getGasolineLevel() {
@@ -106,24 +107,3 @@ public class Car {
 }
 
 
-class CarDriver {
-    public static void main(String[] args) {
-        Car myCar;
-
-        myCar = new Car("Toyota Corolla", 0, 0);
-        myCar.fillTank();
-        myCar.setTargetSpeed(80);
-
-        if (myCar.toggleCCOn())
-            System.out.println("Cruise control is on");
-        else
-            System.out.println("Cruise control is off");
-
-        while (myCar.getSpeed() <myCar.targetSpeed()) {
-            myCar.accelerate();
-            System.out.println("Speed: " + myCar.getSpeed());
-        }
-
-        System.out.println("Target speed reached");
-    }
-}
