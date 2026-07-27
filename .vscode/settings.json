@@ -11,5 +11,7 @@
         "A1.2",
         "A1.1",
         "A5.2"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "explorer.compactFolders": false
 }
