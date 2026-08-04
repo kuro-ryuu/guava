@@ -1,12 +1,12 @@
 package dao;
 
-import entity.Employee;
+import entity.Currency;
 import java.sql.*;
 import datasource.MariaDbConnection;
 import java.util.*;
 
-public class CurrenctDao {
-    public List<Curency> getAllCurrencies() {
+public class CurrencyDao {
+    public List<Currency> getAllCurrencies() {
         Connection conn = MariaDbConnection.getConnection();
         String sql = "SELECT * FROM Currency";
         List<Currency> currencies = new ArrayList<Currency>();

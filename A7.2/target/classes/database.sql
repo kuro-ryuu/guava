@@ -15,7 +15,7 @@ CREATE TABLE Currency (
 );
 
 -- 4
-INSERT INTO Currency (abbreviation, name, exchange rate) VALUES
+INSERT INTO Currency (abbreviation, name, exchange_rate) VALUES
     ('EUR', 'Euro', 0.86619172),
     ('GBP', 'British Pound', 0.74148699),
     ('JPY', 'Japanese Yen', 157.13226114),

@@ -1,12 +1,12 @@
 package application;
 
-import entity.*;
-import dao.*;
-import java.util.*;
+import entity.Currency;
+import dao.CurrencyDao;
+import java.util.List;
 
 public class CurrencyApp {
     public static void main(String[] args) {
-        CurrencyDAo currDao = new CurrencyDao();
+        CurrencyDao currDao = new CurrencyDao();
 
         List <Currency> currencies = currDao.getAllCurrencies();
         for (Currency curr : currencies) {
@@ -16,6 +16,6 @@ public class CurrencyApp {
         Currency curr = currDao.getCurrency(1);
         System.out.println(curr.getName() + " " + curr.getAbbreviation() + " " + curr.getExchange_rate());
 
-        currDao.persist(new main.java.entity.Currency("KRW", "Korean Won", 1.403));
+        currDao.persist(new Currency("KRW", "Korean Won", 1.403));
     }
 }
