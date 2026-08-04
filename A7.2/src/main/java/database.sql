@@ -23,7 +23,7 @@ INSERT INTO Currency (abbreviation, name, exchange_rate) VALUES
     ('CAD', 'Canadian Dollar', 1.40153399),
     ('AUD', 'Australian Dollar', 1.41918065),
     ('CNY', 'Chinese Yuan', 6.75159232),
-    ('VND', 'Vietnamese Dong', 25000.000000);
+    ('VND', 'Vietnamese Dong', 26274.66);
 
 --5
 DROP USER IF EXISTS 'appuser'@'localhost';
