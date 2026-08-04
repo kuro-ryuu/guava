@@ -19,7 +19,10 @@ public class CurrencyExController {
     private void loadRatesFromDatabase() {
         List<Currency> currencies = currencyDao.getAllCurrencies();
         for (Currency currency : currencies) {
-            currencyEx.getAvailableCurrencies().put(currency.getAbbreviation().toUpperCase(), currency.getExchange_rate());
+            if (currency.getExchange_rate() > 0) {
+                double usdPerCurrency = 1.0 / currency.getExchange_rate();
+                currencyEx.getAvailableCurrencies().put(currency.getAbbreviation().toUpperCase(), usdPerCurrency);
+            }
         }
     }
 

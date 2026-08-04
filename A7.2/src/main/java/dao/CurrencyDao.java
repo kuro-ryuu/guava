@@ -8,7 +8,7 @@ import java.util.*;
 public class CurrencyDao {
     public List<Currency> getAllCurrencies() {
         Connection conn = MariaDbConnection.getConnection();
-        String sql = "SELECT * FROM Currency";
+        String sql = "SELECT abbreviation, name, exchange_rate FROM Currency";
         List<Currency> currencies = new ArrayList<Currency>();
 
         try {
@@ -16,9 +16,9 @@ public class CurrencyDao {
             ResultSet rs = s.executeQuery(sql);
 
             while (rs.next()) {
-                String name = rs.getString(1);
-                String abbreviation = rs.getString(2);
-                double exchange_rate = rs.getDouble(3);
+                String abbreviation = rs.getString("abbreviation");
+                String name = rs.getString("name");
+                double exchange_rate = rs.getDouble("exchange_rate");
                 Currency curr = new Currency(name, abbreviation, exchange_rate);
                 currencies.add(curr);
             }
@@ -32,7 +32,7 @@ public class CurrencyDao {
 
     public Currency getCurrency(int id) {
         Connection conn = MariaDbConnection.getConnection();
-        String sql = "SELECT * FROM Currency WHERE id=?";
+        String sql = "SELECT abbreviation, name, exchange_rate FROM Currency WHERE id=?";
 
         String name = null;
         String abbreviation = null;
@@ -46,9 +46,9 @@ public class CurrencyDao {
 
             while (rs.next()) {
                 count++;                
-                name = rs.getString(1);
-                abbreviation = rs.getString(2);
-                exchange_rate = rs.getDouble(3);
+                abbreviation = rs.getString("abbreviation");
+                name = rs.getString("name");
+                exchange_rate = rs.getDouble("exchange_rate");
             }
         }
 

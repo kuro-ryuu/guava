@@ -26,7 +26,6 @@ public class CurrencyEx {
 
     private void initializeRates() {
         ratesToUsd.put("USD", 1.0);
-        ratesToUsd.put("VND", 0.000038);
     }
 
     public double getAmount() {
