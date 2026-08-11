@@ -1,0 +1,1 @@
+Somehow the task 2 test runs normally but ONLY if i were run it from the terminal, the default vsc run button doesn't detect the pom.xml somehow
